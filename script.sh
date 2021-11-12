@@ -1,5 +1,11 @@
 #! /bin/bash
 
+# this will install terraform in the cloud shell
+git clone https://github.com/tfutils/tfenv.git ~/.tfenv
+mkdir ~/bin
+ln -s ~/.tfenv/bin/* ~/bin/
+tfenv install
+
 # this will create a terraform.tfvars file for cloud shell
 cat > provider.tf <<EOF
 region          = "us-east-2"
