@@ -9,7 +9,7 @@ tfenv use latest
 
 # this will create a terraform.tfvars file for cloud shell
 cat > terraform.tfvars <<EOF
-region          = "us-east-2"
+region          = "us-east-1"
 cluster_name    = "my-eks-cluster"
 instance_type   = "t2.small"
 EOF
