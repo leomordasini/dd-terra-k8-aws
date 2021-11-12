@@ -4,6 +4,7 @@
 git clone https://github.com/tfutils/tfenv.git ~/.tfenv
 mkdir ~/bin
 ln -s ~/.tfenv/bin/* ~/bin/
+TFENV_AUTO_INSTALL=false terraform plan
 tfenv install
 
 # this will create a terraform.tfvars file for cloud shell
